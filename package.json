@@ -1,0 +1,32 @@
+{
+  "name": "dashboards",
+  "version": "0.0.1",
+  "scripts": {
+    "start-dev": "node server.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.8.0",
+    "compression": "~1.0.11",
+    "express": "~4.8.8",
+    "express-session": "^1.7.6",
+    "method-override": "~2.2.0",
+    "morgan": "~1.3.0",
+    "mysql": "2.10.2"
+  },
+  "devDependencies": {
+    "should": "~4.0.4",
+    "supertest": "~0.13.0",
+    "grunt": "*",
+    "grunt-env": "*",
+    "grunt-nodemon": "*",
+    "grunt-mocha-test": "~0.11.0",
+    "grunt-karma": "~0.9.0",
+    "grunt-protractor-runner": "~1.1.4",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-csslint": "~0.2.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-concurrent": "~1.0.0",
+    "grunt-node-inspector": "*"
+  }
+}
