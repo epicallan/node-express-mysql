@@ -2,14 +2,10 @@
 'use strict';
 var mysql = require('mysql');
 var config = require('../../config/config');
-var mysqlDetails = require('./.env.json')
+var mysqlDetails = require('../../config/env.json');
 
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'root', // should read from a config file
-  database : 'mtn' // should read from a config file
-});
+
+var connection = mysql.createConnection(mysqlDetails);
 
 connection.connect();
 //error handling for controller method
@@ -38,10 +34,10 @@ exports.data = function(req, res){
   var payload = {
     category: category,
     type: type
-  }
+  };
   // console.log(payload);
   getData(function(error, results){
     if (error) res.send(error).status(500).end();
     res.json(results).status(200);
   }, payload);
-}
+};
