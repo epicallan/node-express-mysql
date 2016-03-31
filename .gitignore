@@ -1,3 +1,6 @@
 node_modules
 npm-debug.log
 public
+.DS_Store
+.sql
+config/env.json

@@ -19,16 +19,16 @@ module.exports = function(grunt) {
 			dev: {
 				script: 'server.js',
 				options: {
-					ext: 'js,html',
-					watch: ['server.js', 'config/**/*.js', 'app/**/*.js']
+					ext: 'js',
+					watch: ['server.js', 'config/**/*.js', 'app/**/*.js', 'public/js/*.js']
 				}
 			},
 			debug: {
 				script: 'server.js',
 				options: {
 					nodeArgs: ['--debug'],
-					ext: 'js,html',
-					watch: ['server.js', 'config/**/*.js', 'app/**/*.js']
+					ext: 'js',
+					watch: ['server.js', 'config/**/*.js', 'app/**/*.js','public/**/*.js']
 				}
 			}
 		},
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 		// Configure the grunt-contrib-jshint task
 		jshint: {
 			all: {
-				src: ['server.js', 'config/**/*.js', 'app/**/*.js', 'public/js/*.js', 'public/dev/js/*.js'],
+				src: ['server.js', 'config/**/*.js', 'app/**/*.js'],
 				options: {
 					node: true,
 					mocha: true
