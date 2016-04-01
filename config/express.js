@@ -5,10 +5,7 @@ var express = require('express'),
     morgan = require('morgan'),
     compress = require('compression'),
     bodyParser = require('body-parser'),
-    methodOverride = require('method-override'),
-    session = require('express-session'),
-    uuid = require('node-uuid'),
-    url = require("url");
+    methodOverride = require('method-override');
 // Define the Express configuration method
 module.exports = function() {
     // Create a new Express application instance
