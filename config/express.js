@@ -27,7 +27,7 @@ module.exports = function() {
     app.use(bodyParser.json());
     app.use(methodOverride());
     // Load the routing files
-    require('../app/routes/app.routes.js')(app);
+    require('../app/routes/routes.js')(app);
     // Configure static file serving
     app.use(express.static('./public'));
     // Return the Express application instance

@@ -1,3 +1,5 @@
+## Description
+* REST mysql expressJs API app
 
 ## Deployment
 * back end nodejs on expressJs framework mysql for database.

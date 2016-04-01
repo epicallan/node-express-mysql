@@ -1,6 +1,6 @@
 node_modules
 npm-debug.log
 .DS_Store
-.sql
 public
+config/config.json
 config/env.json
